@@ -17,7 +17,7 @@ export const CardContainer = ({ isLoaded, data }) => {
               );
             })
           ) : (
-            <div className="alert alert-danger w-100 mr-3" role="alert">
+            <div className="alert alert-danger w-100 mr-3 ml-3" role="alert">
               {globalConstants.NO_RECORDS_FOUND}
             </div>
           )}
