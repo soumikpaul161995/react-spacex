@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Container, Card, Button, Row, Col } from "react-bootstrap";
+import { Card, Button, Row, Col } from "react-bootstrap";
 import querystring from "querystring";
 import { globalConstants } from "../../constants/global";
 import { CardContainer } from "./CardContainer";
 
-export const Dashboard = ({}) => {
+export const Dashboard = (props) => {
 
   const [data, setData] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Card, Button, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "./App.css";
 import { globalConstants } from "./constants/global";
 import { Dashboard } from "./containers/dashboard/Dashboard";

@@ -1,6 +1,6 @@
 import React from "react";
 import { globalConstants } from "../../constants/global";
-import {RocketDetailsCard} from '../../components/RocketDetailsCard'
+import { RocketDetailsCard } from "../../components/RocketDetailsCard";
 import { Row, Col } from "react-bootstrap";
 
 export const CardContainer = ({ isLoaded, data }) => {
@@ -29,9 +29,11 @@ export const CardContainer = ({ isLoaded, data }) => {
           "d-flex col-lg-9 col-md-6 col-sm-12 col-12 justify-content-center"
         }
       >
-        {(['dot1','dot2','dot3']).map(()=><div className="spinner-grow text-success m-1 align-self-center">
-          <span className="sr-only">{globalConstants.LOADING}</span>
-        </div>)}
+        {["dot1", "dot2", "dot3"].map(() => (
+          <div className="spinner-grow text-success m-1 align-self-center">
+            <span className="sr-only">{globalConstants.LOADING}</span>
+          </div>
+        ))}
       </div>
     );
   }
