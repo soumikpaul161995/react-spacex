@@ -6,12 +6,12 @@ import { Row, Col } from "react-bootstrap";
 export const CardContainer = ({ isLoaded, data }) => {
   {
     return isLoaded ? (
-      <Col xs={12} sm={12} md={6} lg={9}>
+      <Col xs={12} sm={12} md={8} lg={9}>
         <Row>
           {data && data.length > 0 ? (
             data.map((details) => {
               return (
-                <Col md={12} lg={3}>
+                <Col xs={12} sm={12} md={6} lg={3} className={'mb-3'}>
                   <RocketDetailsCard details={details} />
                 </Col>
               );

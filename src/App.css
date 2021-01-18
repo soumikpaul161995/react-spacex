@@ -52,9 +52,6 @@ body {
 }
 
 .App-filter-button-container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;  
@@ -65,7 +62,7 @@ body {
 }
 
 .App-filter-button {
-  flex: 0 43%;
+  flex: 0 1 39%;
   margin: 10px;
 }
 
@@ -76,11 +73,6 @@ body {
   to {
     transform: rotate(360deg);
   }
-}
-
-.Rocket-details-card {
-  padding: 1rem;
-  margin-bottom: 15px;
 }
 
 .Rocket-mission-image {
@@ -99,7 +91,7 @@ body {
 
 .Rocket-detail-label {
   color: #181818;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 

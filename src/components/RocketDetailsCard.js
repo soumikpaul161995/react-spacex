@@ -11,14 +11,14 @@ export const RocketDetailsCard = ({ details }) => {
     links,
     rocket,
   } = details;
-  const imgSrc = links.mission_patch_small;
   const land_success = rocket.first_stage.cores[0].land_success;
+
   return (
-    <Card className="Rocket-details-card">
+    <Card className="p-2 h-100">
       <div key={flight_number}>
         <div className="d-flex justify-content-center">
           <img
-            src={imgSrc}
+            src={links.mission_patch_small}
             alt="mission patch img not available on api"
             className="Rocket-mission-image"
           />
@@ -28,10 +28,18 @@ export const RocketDetailsCard = ({ details }) => {
         </div>
         <div className="Rocket-detail-label">
           Mission Ids:{" "}
-          <ul>
-            {" "}
-            <li className="Rocket-detail-value">{mission_id}</li>
-          </ul>
+          {mission_id.length > 0 ? (
+            <ul>
+              {" "}
+              {mission_id.map((id, index) => {
+                return (
+                  <li key={index} className="Rocket-detail-value">
+                    {id}
+                  </li>
+                );
+              })}
+            </ul>
+          ) : null}
         </div>
         <div className="Rocket-detail-label">
           Launch Year:{" "}

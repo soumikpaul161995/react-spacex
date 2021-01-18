@@ -51,7 +51,7 @@ export const Dashboard = (props) => {
     .map((_, index) => 2006 + index);
   return (
     <Row>
-      <Col xs={12} sm={12} md={6} lg={3}>
+      <Col xs={12} sm={12} md={4} lg={3}>
         <Card className="App-filter-card">
           <Card.Body>
             <Card.Title className="App-filter-header">Filters</Card.Title>
